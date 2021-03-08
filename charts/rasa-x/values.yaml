@@ -130,8 +130,12 @@ rasa:
   rabbitQueue: "rasa_production_events"
   # additionalChannelCredentials which should be used by Rasa to connect to various
   # input channels
-  additionalChannelCredentials: {}
-    # rest:
+  additionalChannelCredentials:
+    rocketchat:
+        user: "bot_rasa"
+        password: "bot_rasa"
+        server_url: "http://13.68.207.33:3000/"
+    rest:
     # facebook:
     #   verify: "rasa-bot"
     #   secret: "3e34709d01ea89032asdebfe5a74518"
